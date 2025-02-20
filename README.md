@@ -17,3 +17,5 @@ This project is a part of my **internship assignment**, where I developed an **i
 
 ## 🚀 How to Run  
 1. Clone the repository: you can directly download the files in local system and run them.
+2. go to URL :- https://anubhavgrawal.github.io/Hero-section-of-Pha5e/
+3. go to deployed link.
