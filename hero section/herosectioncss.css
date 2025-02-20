@@ -1,0 +1,112 @@
+/* Importing Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero Heading */
+.hero-heading {
+    font-size: 6rem; /* Increased font size */
+    font-weight: 900;
+    text-align: center;
+    position: absolute;
+    z-index: 2; /* Ensures text is on top */
+    width: 100%;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* Projects Container */
+.projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project Images */
+.project {
+    position: absolute;
+    width: 300px;  /* Increased size */
+    height: 180px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Positioning Each Image */
+.project:nth-child(1) { top: 12%; left: 18%; }
+.project:nth-child(2) { top: 18%; right: 20%; }
+.project:nth-child(3) { bottom: 12%; left: 15%; }
+.project:nth-child(4) { bottom: 10%; right: 15%; }
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Hover Effect - Smooth Size Increase */
+.project:hover img {
+    transform: scale(1.2);
+}  
+
+/* Title & Subtitle Container */
+.project-info {
+    position: absolute;
+    bottom: 10px;  /* Adjust based on design */
+    left: 10px;  /* Adjust based on image */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent */
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Subtitle Styling */
+.project-info span {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    text-transform: none;
+}
+
+/* Show on Hover */
+.project:hover .project-info {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
