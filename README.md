@@ -16,4 +16,4 @@ This project is a part of my **internship assignment**, where I developed an **i
 - **JavaScript** – Adding interactivity  
 
 ## 🚀 How to Run  
-1. Clone the repository:  
+1. Clone the repository: you can directly download the files in local system and run them.
